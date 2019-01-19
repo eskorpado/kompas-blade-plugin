@@ -47,7 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kompas\Commands.cs" />
+    <Compile Include="Kompas\CommandBase.cs" />
+    <Compile Include="Kompas\CutCmd.cs" />
+    <Compile Include="Kompas\DrawCutSectionSketchCmd.cs" />
+    <Compile Include="Kompas\DrawCutTrajectorySketchCmd.cs" />
+    <Compile Include="Kompas\DrawExtrusionSketchCmd.cs" />
+    <Compile Include="Kompas\DrawGripSketchCmd.cs" />
+    <Compile Include="Kompas\ExtrudeCmd.cs" />
+    <Compile Include="Kompas\ExtrudeGripCmd.cs" />
+    <Compile Include="Kompas\FilletGripFacesCmd.cs" />
+    <Compile Include="Kompas\Point.cs" />
+    <Compile Include="Kompas\RootCommand.cs" />
     <Compile Include="Kompas\Wrapper.cs" />
     <Compile Include="Model\Model.cs" />
     <Compile Include="BladeBuilderForm.cs">
