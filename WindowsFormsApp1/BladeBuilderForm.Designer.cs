@@ -43,17 +43,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.gripHeight = new System.Windows.Forms.MaskedTextBox();
-            this.gripWidth = new System.Windows.Forms.MaskedTextBox();
+            this.gripDiagonal = new System.Windows.Forms.MaskedTextBox();
             this.gripLength = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // buildButton
             // 
-            this.buildButton.Location = new System.Drawing.Point(9, 291);
+            this.buildButton.Location = new System.Drawing.Point(10, 265);
             this.buildButton.Name = "buildButton";
             this.buildButton.Size = new System.Drawing.Size(203, 23);
             this.buildButton.TabIndex = 0;
@@ -186,23 +184,14 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Ручка ножа:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(82, 263);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 13);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Высота ручки";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(81, 237);
+            this.label9.Location = new System.Drawing.Point(2, 237);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 13);
+            this.label9.Size = new System.Drawing.Size(155, 13);
             this.label9.TabIndex = 18;
-            this.label9.Text = "Ширина ручки";
+            this.label9.Text = "Диагональный размер ручки";
             // 
             // label10
             // 
@@ -213,25 +202,15 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "Длина ручки";
             // 
-            // gripHeight
+            // gripDiagonal
             // 
-            this.gripHeight.Location = new System.Drawing.Point(164, 260);
-            this.gripHeight.Mask = "00 мм";
-            this.gripHeight.Name = "gripHeight";
-            this.gripHeight.Size = new System.Drawing.Size(49, 20);
-            this.gripHeight.TabIndex = 16;
-            this.gripHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gripHeight.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            // 
-            // gripWidth
-            // 
-            this.gripWidth.Location = new System.Drawing.Point(164, 234);
-            this.gripWidth.Mask = "00 мм";
-            this.gripWidth.Name = "gripWidth";
-            this.gripWidth.Size = new System.Drawing.Size(49, 20);
-            this.gripWidth.TabIndex = 15;
-            this.gripWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gripWidth.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.gripDiagonal.Location = new System.Drawing.Point(164, 234);
+            this.gripDiagonal.Mask = "00 мм";
+            this.gripDiagonal.Name = "gripDiagonal";
+            this.gripDiagonal.Size = new System.Drawing.Size(49, 20);
+            this.gripDiagonal.TabIndex = 15;
+            this.gripDiagonal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gripDiagonal.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // gripLength
             // 
@@ -248,12 +227,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(224, 326);
-            this.Controls.Add(this.label8);
+            this.ClientSize = new System.Drawing.Size(224, 300);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.gripHeight);
-            this.Controls.Add(this.gripWidth);
+            this.Controls.Add(this.gripDiagonal);
             this.Controls.Add(this.gripLength);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -297,11 +274,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.MaskedTextBox gripHeight;
-        private System.Windows.Forms.MaskedTextBox gripWidth;
+        private System.Windows.Forms.MaskedTextBox gripDiagonal;
         private System.Windows.Forms.MaskedTextBox gripLength;
     }
 }

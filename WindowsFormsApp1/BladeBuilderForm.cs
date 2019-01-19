@@ -25,8 +25,7 @@ namespace WindowsFormsApp1
                 ParseControlText(bladeHeight),
                 ParseControlText(grindHeight),
                 ParseControlText(gripLength),
-                ParseControlText(gripWidth),
-                ParseControlText(gripHeight)
+                ParseControlText(gripDiagonal)
             );
             try
             {
