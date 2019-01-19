@@ -15,7 +15,7 @@ namespace WindowsFormsApp1
             _kompas = new KompasWrapper();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BuildButton_Click(object sender, EventArgs e)
         {
             var blade = new Blade(
                 ParseControlText(bladeLenght),
@@ -23,7 +23,10 @@ namespace WindowsFormsApp1
                 ParseControlText(handleBoreDiameter),
                 ParseControlText(buttWidth),
                 ParseControlText(bladeHeight),
-                ParseControlText(grindHeight)
+                ParseControlText(grindHeight),
+                ParseControlText(gripLength),
+                ParseControlText(gripWidth),
+                ParseControlText(gripHeight)
             );
             try
             {
@@ -43,11 +46,11 @@ namespace WindowsFormsApp1
             return string.IsNullOrEmpty(control.Text) ? 0 : double.Parse(control.Text);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void BladeBuilderForm_Load(object sender, EventArgs e)
         {
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void BladeBuilderForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             _kompas.CloseInvisible();
         }

@@ -22,6 +22,7 @@ namespace WindowsFormsApp1.Kompas
                 Init();
             }
             new RootCommand(
+                new FilletGripFacesCmd(new ExtrudeGripCmd(new DrawGripSketchCmd())),
                 new ExtrudeCmd(new DrawExtrusionSketchCmd()),
                 new CutCmd(new DrawCutSectionSketchCmd(), new DrawCutTrajectorySketchCmd())
             ).Init(_kompas, model).Execute();

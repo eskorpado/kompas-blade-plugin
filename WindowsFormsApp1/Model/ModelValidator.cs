@@ -20,6 +20,7 @@ namespace WindowsFormsApp1.Model
     {
         public ValidationException(IEnumerable<ValidationResult> results) : base(String.Join("\n", results.Select(result => result.ErrorMessage)))
         {
+            var list = new List<string>();
         }
     }
 
