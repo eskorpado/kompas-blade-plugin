@@ -4,7 +4,7 @@ using Kompas6Constants3D;
 
 namespace WindowsFormsApp1.Kompas
 {
-    internal partial class KompasWrapper
+    public partial class KompasWrapper
     {
         /// <summary>
         /// Команда, инициализируюзая документ Компас и исполняющая все вложенные команды

@@ -6,7 +6,7 @@ using Kompas6API5;
 
 namespace WindowsFormsApp1.Kompas
 {
-    partial class KompasWrapper
+    public partial class KompasWrapper
     {
         private KompasObject _kompas;
 

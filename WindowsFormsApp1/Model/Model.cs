@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WindowsFormsApp1.Model
 {
-    internal class Blade : IValidatableObject
+    public class Blade : IValidatableObject
     {
         [Range(100, 150, ErrorMessage = "Длина клинка должна быть от 100 до 150 мм")]
         public double BladeLength { get; }
