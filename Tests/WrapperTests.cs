@@ -15,7 +15,7 @@ namespace Tests
             var kompasMock = new Mock<KompasObject>();
             kompasMock.Setup(mock => mock.Visible).Returns(false);
             var wrapper = new KompasWrapper();
-            SetPrivateField(wrapper, "_kompas", kompasMock);
+            SetPrivateField(wrapper, "_kompas", kompasMock.Object);
             wrapper.CloseInvisible();
             kompasMock.Verify(mock => mock.Quit());
         }

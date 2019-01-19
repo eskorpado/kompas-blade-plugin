@@ -6,7 +6,7 @@ namespace Tests
     [TestFixture]
     public class ModelTests
     {
-        [TestCase(100, 100, 4, 4, 20, 10, 101, 5, TestName = "Модель должна быть валидной")]
+        [TestCase(100, 100, 4, 4, 20, 10, 101, 30, TestName = "Модель должна быть валидной")]
         public void ModelShouldBeValid(
             double bladeLength, double handleLength, double handleBoreDiameter, double buttWidth, double bladeHeight,
             double grindHeight, double gripLength, double gripDiagonal)
