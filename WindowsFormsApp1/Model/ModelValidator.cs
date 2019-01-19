@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace WindowsFormsApp1.Model
 {
-    internal static class ModelValidator
+    public static class ModelValidator
     {
         public static void Validate(Blade blade)
         {
@@ -16,10 +16,11 @@ namespace WindowsFormsApp1.Model
         }
     }
 
-    class ValidationException : Exception
+    public class ValidationException : Exception
     {
         public ValidationException(IEnumerable<ValidationResult> results) : base(String.Join("\n", results.Select(result => result.ErrorMessage)))
         {
+            var list = new List<string>();
         }
     }
 
